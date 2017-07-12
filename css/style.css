@@ -1,0 +1,101 @@
+body,div,header,section,footer,div,img,p,h1,h2,h3,h4,h5,h6,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+body{
+    background-image: url("../img/bj2.jpg");
+}
+
+#box{
+    width: 1200px;
+    margin: 50px auto;
+}
+/*the name div*/
+#div1{
+    width: 520px;
+    height: 180px;
+    float: left;
+    opacity: 0;
+    transition: 2s all linear;
+}
+#div1>p{
+    font-size: 28px;
+    color: white;
+    text-shadow: 1px 1px 2px #fff;
+}
+#div1>p>span{
+    font-size: 30px;
+    color: #66afe9;
+}
+#div1>img{
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid #dff0d8;
+}
+/*the span*/
+#span,#span2{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border: 2px solid #eea236;
+    border-radius: 50%;
+}
+#span{
+    position: absolute;
+    left: 605px;
+    top: 140px;
+}
+/*the second div*/
+#div2{
+    width: 530px;
+    height: 225px;
+    position: absolute;
+    bottom: 50px;
+    right: 75px;
+    opacity: 0;
+    transition: 2s all linear;
+}
+#div2>p{
+    font-size: 28px;
+    color: white;
+    text-shadow: 1px 1px 2px #fff;
+}
+#div2>p:nth-child(1){
+    font-size: 28px;
+}
+#div2>p:nth-child(2){
+    font-size: 22px;
+}
+#span2{
+    position: absolute;
+    left: 730px;
+    top: 600px;
+    opacity: 0;
+    transition: 1s all linear;
+}
+#img{
+    width: 200px;
+    position: absolute;
+    top: 230px;
+    left: 42%;
+    opacity: 0;
+    transition: 1s all ease;
+}
+#img:hover{
+    transform: rotateY(60deg);
+}
+
